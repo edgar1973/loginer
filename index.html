@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/style.css?v=1.01" />
+	<meta charset="UTF-8">
+	<title>Loginer</title>
+</head>
+<body>
+<div class="body-wrapper">
+
+  <div class="loginer first visible">
+    <p class="intro-text">АВТОРИЗАЦИЯ</p>
+    <p class="login">Логин</p>
+    <input type="text">
+    <p class="password">Пароль</p>
+    <input type="text">
+    <button>Войти</button>
+    <p class="change-option"><span class="log active">Вход</span> / <span class="reg">Регистрация</span></p>
+  </div>
+
+  <div class="loginer seccond">
+    <p class="intro-text">РЕГИСТРАЦИЯ</p>
+    <form action="">
+    <p class="login">Имя</p>
+    <input required id="username" type="text">
+    <p class="login">Логин</p>
+    <input required id="login" type="text">
+    <p class="password">Пароль</p>
+    <input required id="password" type="text">
+    <button onclick="checker()">Войти</button>
+    </form>
+    <p class="change-option"><span class="log active">Вход</span> / <span class="reg">Регистрация</span></p>
+  </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/custom.js"></script>
+</div>
+</body>
+</html>
