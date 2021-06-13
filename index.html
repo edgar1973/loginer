@@ -11,26 +11,36 @@
 
   <div class="loginer first visible">
     <p class="intro-text">АВТОРИЗАЦИЯ</p>
+    <form onsubmit="loger()" action="#">
     <p class="login">Логин</p>
-    <input type="text">
+    <input id="cur-login" type="text" autocomplete="off">
     <p class="password">Пароль</p>
-    <input type="text">
-    <button>Войти</button>
+    <input type="password" id="cur-password" type="text" autocomplete="off">
+  
+    <button type="submit">Войти</button>
+  </form>
     <p class="change-option"><span class="log active">Вход</span> / <span class="reg">Регистрация</span></p>
   </div>
 
   <div class="loginer seccond">
     <p class="intro-text">РЕГИСТРАЦИЯ</p>
-    <form action="">
+    <form onsubmit="register()" action="#">
     <p class="login">Имя</p>
-    <input required id="username" type="text">
+    <input required id="username" type="text" autocomplete="off">
     <p class="login">Логин</p>
-    <input required id="login" type="text">
+    <input required id="login" type="text" autocomplete="off">
     <p class="password">Пароль</p>
-    <input required id="password" type="text">
-    <button onclick="checker()">Войти</button>
+    <input type="password" required id="password" type="text" autocomplete="off">
+    <p class="password">Подтвердите пароль</p>
+    <input type="password" required id="password-confirm" type="text" autocomplete="off">
+    <button type="submit">Зарегистрироваться</button>
     </form>
     <p class="change-option"><span class="log active">Вход</span> / <span class="reg">Регистрация</span></p>
+  </div>
+
+  <div class="loginer hello">
+    <p id="greeting" class="intro-text"></p>
+    <span id="close">x</span>
   </div>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/custom.js"></script>
