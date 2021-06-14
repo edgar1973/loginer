@@ -1,49 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="css/style.css?v=1.01" />
-	<meta charset="UTF-8">
-	<title>Loginer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css?v=1.01" />
+  <meta charset="UTF-8">
+  <title>Loginer</title>
 </head>
+
 <body>
-<div class="body-wrapper">
+  <div class="body-wrapper">
 
-  <div class="loginer first visible">
-    <p class="intro-text">АВТОРИЗАЦИЯ</p>
-    <form onsubmit="loger()" action="#">
-    <p class="login">Логин</p>
-    <input id="cur-login" type="text" autocomplete="off">
-    <p class="password">Пароль</p>
-    <input type="password" id="cur-password" type="text" autocomplete="off">
-  
-    <button type="submit">Войти</button>
-  </form>
-    <p class="change-option"><span class="log active">Вход</span> / <span class="reg">Регистрация</span></p>
-  </div>
+    <div class="loginer first visible">
+      <p class="intro-text">АВТОРИЗАЦИЯ</p>
+      <form onsubmit="loger()" action="#">
+        <p class="login">Логин</p>
+        <input id="cur-login" type="text" autocomplete="off">
+        <p class="password">Пароль</p>
+        <input type="password" id="cur-password" type="text" autocomplete="off">
 
-  <div class="loginer seccond">
-    <p class="intro-text">РЕГИСТРАЦИЯ</p>
-    <form onsubmit="register()" action="#">
-    <p class="login">Имя</p>
-    <input required id="username" type="text" autocomplete="off">
-    <p class="login">Логин</p>
-    <input required id="login" type="text" autocomplete="off">
-    <p class="password">Пароль</p>
-    <input type="password" required id="password" type="text" autocomplete="off">
-    <p class="password">Подтвердите пароль</p>
-    <input type="password" required id="password-confirm" type="text" autocomplete="off">
-    <button type="submit">Зарегистрироваться</button>
-    </form>
-    <p class="change-option"><span class="log active">Вход</span> / <span class="reg">Регистрация</span></p>
-  </div>
+        <button type="submit">Войти</button>
+      </form>
+      <p class="change-option"><span class="log active">Вход</span> / <span class="reg">Регистрация</span></p>
+    </div>
 
-  <div class="loginer hello">
-    <p id="greeting" class="intro-text"></p>
-    <span id="close">x</span>
+    <div class="loginer seccond">
+      <p class="intro-text">РЕГИСТРАЦИЯ</p>
+      <form onsubmit="register()" action="#">
+        <p class="login">Имя</p>
+        <input required id="username" type="text" autocomplete="off">
+        <p class="login">Email</p>
+        <input required id="email" type="text" autocomplete="off">
+        <p class="login">Логин</p>
+        <input required id="login" type="text" autocomplete="off">
+        <p class="password">Пароль</p>
+        <input type="password" required id="password" type="text" autocomplete="off">
+        <p class="password">Подтвердите пароль</p>
+        <input type="password" required id="password-confirm" type="text" autocomplete="off">
+        <button type="submit">Зарегистрироваться</button>
+      </form>
+      <p class="change-option"><span class="log active">Вход</span> / <span class="reg">Регистрация</span></p>
+    </div>
+
+    <div class="loginer hello">
+      <p id="greeting" class="intro-text"></p>
+      <span id="close">x</span>
+    </div>
+
+    <div class="profile">
+      <div class="profile-up">
+        <p id="user-prof" class="profile-name">ПРОФИЛЬ</p>
+        <p id="prof-icon" class="profile-icon">P</p>
+      </div>
+      <p class="profile-text">Имя: <span id="user-name"></span></p>
+      <p class="profile-text">Email: <span id="user-email"></span></p>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/custom.js"></script>
   </div>
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/custom.js"></script>
-</div>
 </body>
+
 </html>

@@ -122,7 +122,7 @@ button:hover{
   cursor: pointer;
 }
 .log.active,.reg.active{
-  color: blue;
+  color: rgba(0, 0, 255, 0.63);
 }
 .loginer.hello{
   position: relative;
@@ -140,4 +140,42 @@ button:hover{
 }
 .loginer.hello .intro-text{
   margin-bottom: 0;
+}
+.profile{
+  transition: .5s;
+  transform: translateX(-10000px);
+  min-width: 250px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.678);
+  border-right: 1px solid rgba(255, 0, 0, 0.658);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.658);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.profile.show{
+  transition: .5s;
+  transform: translateX(0px);
+}
+.profile-up{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.profile-icon{
+  padding: 22px 34px;
+  background: white;
+  border-radius: 50px;
+  font-size: 35px;
+  color:rgba(0, 0, 0, 0.678)
+}
+.profile-name{
+  font-size: 25px;
+  text-align: center;
+}
+.profile-text{
+  font-size: 20px;
+  margin-bottom: 10px;
 }
